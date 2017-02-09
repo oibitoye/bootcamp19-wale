@@ -1,4 +1,4 @@
-(function(){
+(function() {
   'use strict';
 
   describe("Determine the sequence of an array of numbers: ", function() {
@@ -7,6 +7,12 @@
 
       it("should return 0 for an empty array", function() {
         expect(aritGeo([])).toEqual(0);
+      });
+
+    describe("Case for a single element array", function() {
+
+      it("should return 0 for [7]", function() {
+        expect(aritGeo([7])).toEqual(0);
       });
 
     });
