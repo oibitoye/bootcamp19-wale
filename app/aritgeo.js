@@ -1,6 +1,6 @@
 function aritGeo(lists) {
 
-	if (lists.length === 0) {
+	if (lists.length < 2) {
 		return 0;
 	} else {
 		const commonDiff = lists[1] - lists[0];
