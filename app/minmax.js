@@ -1,10 +1,11 @@
 function findMinMax(numberList) {
 	
-	maxMum = Math.max.apply(null, numberList); // Calculate Maximum number in a list
-	minMum = Math.min.apply(null, numberList); // Calculate Minimum number in a list
+	var maxMum = Math.max.apply(null, numberList); // Calculate Maximum number in a list
+	var minMum = Math.min.apply(null, numberList); // Calculate Minimum number in a list
 	
 	if (minMum === maxMum) {
-	  return [minMum];
+	  var return_var = minMum;
 	} else
-	  return [minMum, maxMum];
+	  return_var = [minMum, maxMum];
+	return return_var
 }
