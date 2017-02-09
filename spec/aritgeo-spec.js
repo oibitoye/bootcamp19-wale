@@ -9,6 +9,8 @@
         expect(aritGeo([])).toEqual(0);
       });
 
+    });
+
     describe("Case for a single element array", function() {
 
       it("should return 0 for [7]", function() {
@@ -64,7 +66,6 @@
       });
       
     });
-
   });
-  
-})();
+})
+

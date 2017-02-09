@@ -1,3 +1,5 @@
+require("../app/minmax.js");
+
 (function() {
   'use strict';
 
@@ -27,11 +29,11 @@
 
       it('should return [99] for [99]', function() {
         expect(findMinMax([99])).toEqual([99]);
-      }};
+      });
 
       it('should return [0] for [0, 0, 0, 0]', function() {
         expect(findMinMax([0])).toEqual([0, 0, 0, 0]);
-      }};
+      });
 
     });
 
