@@ -1,8 +1,8 @@
-function aritGeo(lists) {
 
-	if (lists.length < 2) {
-		return 0;
-	} else {
+function aritGeo(lists) {
+	var return_var;
+
+	if (lists.length > 1) {
 		const commonDiff = lists[1] - lists[0];
 		const commonRatio = lists[1] / lists[0];
 		var arithprog = true;
@@ -19,11 +19,16 @@ function aritGeo(lists) {
 		}
 
 		if(arithprog === true) {
-			return "Arithmetic";
+			return_var = "Arithmetic";
 		}
 		else if(geoprog === true) {
-			return"Geometric";
+			return_var = "Geometric";
 		} else
-		return -1;
-	}
+			return_var = -1;
+
+	} else return_var = 0;
+	
+	return return_var;
 }
+
+exports.aritGeo = aritGeo;
