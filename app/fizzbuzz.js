@@ -12,3 +12,5 @@ function fizzBuzz(number) {
 		return number;
 	}
 }
+
+exports.fizzBuzz = fizzBuzz;
